@@ -10,8 +10,12 @@ import UIKit
 
 struct Constants {
     
+    static let reuseIdentifier = "Cell"
     static let cellPadding: CGFloat = 15
+    static let photoSize = CGSize(width: CGFloat(1030), height: CGFloat(684))
     static let level = "Level"
     static let title = "Smart Investing"
+    static let pathResource = "achievements"
+    static let pathType = "json"
     
 }

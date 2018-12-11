@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-public let reuseIdentifier = "Cell"
+
 
 class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     
@@ -34,7 +34,7 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ListCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.reuseIdentifier, for: indexPath) as! ListCollectionViewCell
         cell.achievement = achievements[indexPath.item]
         return cell
     }
@@ -45,15 +45,11 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     }
     
     func collectionView(collectionView: UICollectionView, heightForPhotoAt indexPath: IndexPath, with width: CGFloat) -> CGFloat {
-        let size = CGSize(width: CGFloat(1030), height: CGFloat(684))
+       
         let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
-        let rect = AVMakeRect(aspectRatio: size, insideRect: boundingRect)
+        let rect = AVMakeRect(aspectRatio: Constants.photoSize, insideRect: boundingRect)
         return rect.size.height
     }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        UIApplication.shared.statusBarStyle = .lightContent
-    }
 
 }

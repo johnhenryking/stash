@@ -13,7 +13,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         //Set corner radius and rounded for properties
-        bgImageView.setCornerRadius(to: 10)
+        bgImageView.setCornerRadius(to: Constants.cellPadding-5)
         listProgressBar.roundEdges()
         levelBackgroundView.setRounded()
     }

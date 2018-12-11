@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ListInteractor {
     
     static var title: String?
@@ -15,7 +17,7 @@ class ListInteractor {
     // Get achievements from json file 
     func getAchievements(for presenter: ListCollectionViewController) {
         
-        if let filePath = Bundle.main.path(forResource: "achievements", ofType: "json"), let data = NSData(contentsOfFile: filePath) as Data? {
+        if let filePath = Bundle.main.path(forResource: Constants.pathResource, ofType: Constants.pathType), let data = NSData(contentsOfFile: filePath) as Data? {
             
             do {
                 
@@ -29,12 +31,11 @@ class ListInteractor {
                 
                 presenter.navigationItem.title = achievements.overview.values.first
                 ListInteractor.title = achievements.overview.values.first
-                print(ListInteractor.title)
                 
             }
                 
             catch let error {
-                
+                // Present Alert Controller if unable to access json
                 presenter.presentAlert(title: "Error", message: error.localizedDescription)
                 
             }

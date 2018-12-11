@@ -12,8 +12,10 @@ import XCTest
 class stashTests: XCTestCase {
     
     func testReuseIdentifier() {
-        XCTAssertEqual(reuseIdentifier, "Cell")
+        XCTAssertEqual(Constants.reuseIdentifier, "Cell")
         XCTAssertEqual(ListInteractor.title, Constants.title)
+        XCTAssertEqual(Constants.pathResource, "achievements")
+        XCTAssertEqual(Constants.pathType, "json")
     }
 
     override func setUp() {
