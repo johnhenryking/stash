@@ -114,7 +114,6 @@
 		CEFBC6C021BEDE8400071AD0 /* stash */ = {
 			isa = PBXGroup;
 			children = (
-				CEFBC6C521BEDE8400071AD0 /* Main.storyboard */,
 				CEFBC70721BF90F300071AD0 /* View */,
 				CEFBC70921BF912900071AD0 /* Interactor */,
 				CEFBC70621BF90C700071AD0 /* Protocols */,
@@ -175,6 +174,7 @@
 		CEFBC70721BF90F300071AD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEFBC6C521BEDE8400071AD0 /* Main.storyboard */,
 				CEFBC6FF21BF056900071AD0 /* ListCollectionViewController.swift */,
 				CEFBC70121BF059E00071AD0 /* ListCollectionViewCell.swift */,
 			);
