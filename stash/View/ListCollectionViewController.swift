@@ -14,6 +14,7 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     let interactor = ListInteractor()
     let router = ListWireframe()
     var achievements = [Achievement]()
+    var refresher: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     func collectionViewLayout() {
         self.layout?.delegate = self
         self.layout?.collectionView?.contentInset = UIEdgeInsets(top: Constants.cellPadding, left: Constants.cellPadding, bottom: Constants.cellPadding, right: Constants.cellPadding)
+        self.setupRefresher()
     }
     
     // Height for dynamic photos

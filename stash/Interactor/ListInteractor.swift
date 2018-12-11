@@ -26,7 +26,6 @@ class ListInteractor {
                     let achievement = Achievement(json)
                     presenter.achievements.append(achievement)
                 }
-                
                 presenter.navigationItem.title = achievements.overview["title"]
                 ListInteractor.title = achievements.overview["title"]
             }

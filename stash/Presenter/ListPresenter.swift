@@ -12,8 +12,6 @@ extension ListCollectionViewController {
     
     func unlockNewLevel(currentIndex: Int) {
         
-        
-        
         let alertController = UIAlertController(title: Constants.completionTitle, message: Constants.completionMessage, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel) { (_) in
             if currentIndex + 1 <= self.achievements.count-1  {
@@ -27,6 +25,18 @@ extension ListCollectionViewController {
         alertController.addAction(action)
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func setupRefresher() {
+        self.refresher = UIRefreshControl()
+        self.refresher.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        self.collectionView!.addSubview(refresher)
+    }
+    
+    @objc func reloadData() {
+        self.collectionView.reloadData()
+        self.refresher.endRefreshing()
+    }
    
+    
     
 }
