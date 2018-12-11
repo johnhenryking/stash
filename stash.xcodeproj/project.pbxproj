@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CEFBC6C221BEDE8400071AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6C121BEDE8400071AD0 /* AppDelegate.swift */; };
-		CEFBC6C421BEDE8400071AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6C321BEDE8400071AD0 /* ViewController.swift */; };
 		CEFBC6C721BEDE8400071AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFBC6C521BEDE8400071AD0 /* Main.storyboard */; };
 		CEFBC6CA21BEDE8400071AD0 /* stash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6C821BEDE8400071AD0 /* stash.xcdatamodeld */; };
 		CEFBC6CC21BEDE8700071AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFBC6CB21BEDE8700071AD0 /* Assets.xcassets */; };
 		CEFBC6CF21BEDE8700071AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFBC6CD21BEDE8700071AD0 /* LaunchScreen.storyboard */; };
 		CEFBC6DA21BEDE8700071AD0 /* stashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6D921BEDE8700071AD0 /* stashTests.swift */; };
 		CEFBC6E521BEDE8700071AD0 /* stashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6E421BEDE8700071AD0 /* stashUITests.swift */; };
+		CEFBC6F821BEE14500071AD0 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = CEFBC6F721BEE14500071AD0 /* achievements.json */; };
+		CEFBC6FC21BEEA2B00071AD0 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6FB21BEEA2A00071AD0 /* Achievements.swift */; };
+		CEFBC6FE21BEF94F00071AD0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6FD21BEF94F00071AD0 /* Extensions.swift */; };
+		CEFBC70021BF056900071AD0 /* ListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC6FF21BF056900071AD0 /* ListCollectionViewController.swift */; };
+		CEFBC70221BF059E00071AD0 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70121BF059E00071AD0 /* ListCollectionViewCell.swift */; };
+		CEFBC70421BF098300071AD0 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70321BF098300071AD0 /* ListProtocol.swift */; };
+		CEFBC70B21BF915F00071AD0 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */; };
+		CEFBC70D21BFB0AC00071AD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70C21BFB0AC00071AD0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,6 @@
 /* Begin PBXFileReference section */
 		CEFBC6BE21BEDE8400071AD0 /* stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFBC6C121BEDE8400071AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEFBC6C321BEDE8400071AD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEFBC6C621BEDE8400071AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEFBC6C921BEDE8400071AD0 /* stash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stash.xcdatamodel; sourceTree = "<group>"; };
 		CEFBC6CB21BEDE8700071AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		CEFBC6E021BEDE8700071AD0 /* stashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFBC6E421BEDE8700071AD0 /* stashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stashUITests.swift; sourceTree = "<group>"; };
 		CEFBC6E621BEDE8700071AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFBC6F721BEE14500071AD0 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		CEFBC6FB21BEEA2A00071AD0 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		CEFBC6FD21BEF94F00071AD0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEFBC6FF21BF056900071AD0 /* ListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewController.swift; sourceTree = "<group>"; };
+		CEFBC70121BF059E00071AD0 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEFBC70321BF098300071AD0 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		CEFBC70C21BFB0AC00071AD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 		CEFBC6B521BEDE8300071AD0 = {
 			isa = PBXGroup;
 			children = (
+				CEFBC6C121BEDE8400071AD0 /* AppDelegate.swift */,
 				CEFBC6C021BEDE8400071AD0 /* stash */,
 				CEFBC6D821BEDE8700071AD0 /* stashTests */,
 				CEFBC6E321BEDE8700071AD0 /* stashUITests */,
@@ -100,10 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				CEFBC6C521BEDE8400071AD0 /* Main.storyboard */,
-				CEFBC6C121BEDE8400071AD0 /* AppDelegate.swift */,
-				CEFBC6C321BEDE8400071AD0 /* ViewController.swift */,
-				CEFBC6CB21BEDE8700071AD0 /* Assets.xcassets */,
-				CEFBC6CD21BEDE8700071AD0 /* LaunchScreen.storyboard */,
+				CEFBC70721BF90F300071AD0 /* View */,
+				CEFBC70921BF912900071AD0 /* Interactor */,
+				CEFBC70621BF90C700071AD0 /* Protocols */,
+				CEFBC70521BF90A300071AD0 /* Entity */,
+				CEFBC6F221BEDEA800071AD0 /* Supporting Files */,
 				CEFBC6D021BEDE8700071AD0 /* Info.plist */,
 				CEFBC6C821BEDE8400071AD0 /* stash.xcdatamodeld */,
 			);
@@ -126,6 +142,51 @@
 				CEFBC6E621BEDE8700071AD0 /* Info.plist */,
 			);
 			path = stashUITests;
+			sourceTree = "<group>";
+		};
+		CEFBC6F221BEDEA800071AD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC6FD21BEF94F00071AD0 /* Extensions.swift */,
+				CEFBC70C21BFB0AC00071AD0 /* Constants.swift */,
+				CEFBC6CB21BEDE8700071AD0 /* Assets.xcassets */,
+				CEFBC6F721BEE14500071AD0 /* achievements.json */,
+				CEFBC6CD21BEDE8700071AD0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFBC70521BF90A300071AD0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC6FB21BEEA2A00071AD0 /* Achievements.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CEFBC70621BF90C700071AD0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC70321BF098300071AD0 /* ListProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEFBC70721BF90F300071AD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC6FF21BF056900071AD0 /* ListCollectionViewController.swift */,
+				CEFBC70121BF059E00071AD0 /* ListCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEFBC70921BF912900071AD0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFBC6CF21BEDE8700071AD0 /* LaunchScreen.storyboard in Resources */,
+				CEFBC6F821BEE14500071AD0 /* achievements.json in Resources */,
 				CEFBC6CC21BEDE8700071AD0 /* Assets.xcassets in Resources */,
 				CEFBC6C721BEDE8400071AD0 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +321,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFBC70B21BF915F00071AD0 /* ListInteractor.swift in Sources */,
+				CEFBC70421BF098300071AD0 /* ListProtocol.swift in Sources */,
 				CEFBC6CA21BEDE8400071AD0 /* stash.xcdatamodeld in Sources */,
-				CEFBC6C421BEDE8400071AD0 /* ViewController.swift in Sources */,
+				CEFBC6FE21BEF94F00071AD0 /* Extensions.swift in Sources */,
+				CEFBC70221BF059E00071AD0 /* ListCollectionViewCell.swift in Sources */,
+				CEFBC6FC21BEEA2B00071AD0 /* Achievements.swift in Sources */,
+				CEFBC70021BF056900071AD0 /* ListCollectionViewController.swift in Sources */,
 				CEFBC6C221BEDE8400071AD0 /* AppDelegate.swift in Sources */,
+				CEFBC70D21BFB0AC00071AD0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
