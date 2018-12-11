@@ -28,7 +28,6 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7hp-oJ-ENx">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="259"/>
-                                            <color key="backgroundColor" red="0.95686274510000002" green="0.95692259069999996" blue="0.95674854519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WUd-PP-zYA">
                                             <rect key="frame" x="20" y="192.5" width="338" height="16"/>
