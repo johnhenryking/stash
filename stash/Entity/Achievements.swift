@@ -41,7 +41,7 @@ struct Achievement: Decodable {
         accessible = json["accessible"] as! Bool
     }
     
-    mutating func progressIncrease() {
+    mutating func increaseProgress() {
         
         switch self.progress {
             

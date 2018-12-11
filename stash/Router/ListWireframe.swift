@@ -18,8 +18,7 @@ class ListWireframe {
             if cell.achievement?.progress == 40 {
                 presenter.unlockNewLevel(currentIndex: index)
             }
-            cell.achievement?.progressIncrease()
-            
+            cell.achievement?.increaseProgress()
         case false:
             presenter.presentAlert(title: Constants.lockedTitle, message: Constants.lockedMessage)
         default:
