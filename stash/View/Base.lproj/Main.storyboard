@@ -28,7 +28,7 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7hp-oJ-ENx">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="259"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.95686274510000002" green="0.95692259069999996" blue="0.95674854519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WUd-PP-zYA">
                                             <rect key="frame" x="20" y="192.5" width="338" height="16"/>
@@ -127,7 +127,6 @@
         <!--Navigation Controller-->
         <scene sceneID="m2R-KW-Gsa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zDP-fX-rsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hcn-Mm-dQq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xvL-4n-sNN">
@@ -143,6 +142,7 @@
                         <segue destination="0go-Ee-4GO" kind="relationship" relationship="rootViewController" id="a0b-sD-yNn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDP-fX-rsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1358" y="734"/>
         </scene>
