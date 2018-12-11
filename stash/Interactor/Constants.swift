@@ -17,5 +17,13 @@ struct Constants {
     static let title = "Smart Investing"
     static let pathResource = "achievements"
     static let pathType = "json"
+    static let lockedTitle = "Level Locked"
+    static let lockedMessage = "You have yet to unlocked this level."
+    static func show(_ progress: Int) -> String {
+        return "\(progress)pts"
+    }
+    static let completionTitle = "Congratulations!"
+    static let completionMessage = "You've clicked your way to the next level!"
+    
     
 }

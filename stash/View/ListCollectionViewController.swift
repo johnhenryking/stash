@@ -14,7 +14,7 @@ import AVKit
 class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
     
     let interactor = ListInteractor()
-    let spacing: CGFloat = 15
+    let router = ListWireframe()
     var achievements = [Achievement]()
     
     override func viewDidLoad() {
@@ -49,6 +49,11 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
         let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
         let rect = AVMakeRect(aspectRatio: Constants.photoSize, insideRect: boundingRect)
         return rect.size.height
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! ListCollectionViewCell
+        router.routeSelection(with: self, cell: cell, bool: cell.achievement?.accessible, index: indexPath.item)
     }
     
 

@@ -22,6 +22,8 @@
 		CEFBC70421BF098300071AD0 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70321BF098300071AD0 /* ListProtocol.swift */; };
 		CEFBC70B21BF915F00071AD0 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */; };
 		CEFBC70D21BFB0AC00071AD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70C21BFB0AC00071AD0 /* Constants.swift */; };
+		CEFBC71021C0270000071AD0 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC70F21C0270000071AD0 /* ListWireframe.swift */; };
+		CEFBC71321C02DAA00071AD0 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBC71221C02DAA00071AD0 /* ListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CEFBC70321BF098300071AD0 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
 		CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		CEFBC70C21BFB0AC00071AD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEFBC70F21C0270000071AD0 /* ListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		CEFBC71221C02DAA00071AD0 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 			children = (
 				CEFBC70721BF90F300071AD0 /* View */,
 				CEFBC70921BF912900071AD0 /* Interactor */,
-				CEFBC70621BF90C700071AD0 /* Protocols */,
+				CEFBC71121C02D8400071AD0 /* Presenter */,
 				CEFBC70521BF90A300071AD0 /* Entity */,
+				CEFBC70E21C0254400071AD0 /* Router */,
+				CEFBC70621BF90C700071AD0 /* Protocols */,
 				CEFBC6F221BEDEA800071AD0 /* Supporting Files */,
 				CEFBC6D021BEDE8700071AD0 /* Info.plist */,
 				CEFBC6C821BEDE8400071AD0 /* stash.xcdatamodeld */,
@@ -147,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				CEFBC6FD21BEF94F00071AD0 /* Extensions.swift */,
-				CEFBC70C21BFB0AC00071AD0 /* Constants.swift */,
 				CEFBC6CB21BEDE8700071AD0 /* Assets.xcassets */,
 				CEFBC6F721BEE14500071AD0 /* achievements.json */,
 				CEFBC6CD21BEDE8700071AD0 /* LaunchScreen.storyboard */,
@@ -185,8 +190,25 @@
 			isa = PBXGroup;
 			children = (
 				CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */,
+				CEFBC70C21BFB0AC00071AD0 /* Constants.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CEFBC70E21C0254400071AD0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC70F21C0270000071AD0 /* ListWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEFBC71121C02D8400071AD0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEFBC71221C02DAA00071AD0 /* ListPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFBC71021C0270000071AD0 /* ListWireframe.swift in Sources */,
 				CEFBC70B21BF915F00071AD0 /* ListInteractor.swift in Sources */,
 				CEFBC70421BF098300071AD0 /* ListProtocol.swift in Sources */,
 				CEFBC6CA21BEDE8400071AD0 /* stash.xcdatamodeld in Sources */,
@@ -328,6 +351,7 @@
 				CEFBC70221BF059E00071AD0 /* ListCollectionViewCell.swift in Sources */,
 				CEFBC6FC21BEEA2B00071AD0 /* Achievements.swift in Sources */,
 				CEFBC70021BF056900071AD0 /* ListCollectionViewController.swift in Sources */,
+				CEFBC71321C02DAA00071AD0 /* ListPresenter.swift in Sources */,
 				CEFBC6C221BEDE8400071AD0 /* AppDelegate.swift in Sources */,
 				CEFBC70D21BFB0AC00071AD0 /* Constants.swift in Sources */,
 			);

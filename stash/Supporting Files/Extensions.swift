@@ -10,6 +10,14 @@ import UIKit
 
 extension UIView {
     
+    func animateAlpha(to alpha: CGFloat) {
+        
+        UIView.animate(withDuration: 0.3) {
+            self.alpha = alpha
+        }
+        
+    }
+    
     func setCornerRadius(to newRadius: CGFloat) {
         self.layer.cornerRadius = newRadius
         self.layer.masksToBounds = true

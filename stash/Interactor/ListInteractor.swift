@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class ListInteractor {
     
     static var title: String?
@@ -41,5 +39,8 @@ class ListInteractor {
             }
         }
     }
+    
+    
+    
     
 }

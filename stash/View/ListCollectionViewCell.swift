@@ -35,9 +35,10 @@ class ListCollectionViewCell: UICollectionViewCell {
     func updateUI() {
         bgImageView.setImage(with: achievement?.bgImageUrl)
         let progress = achievement?.progress ?? 0
-        ptsLabel.text = "\(progress)pts"
+        ptsLabel.text = Constants.show(progress)
         levelLabel.text = achievement?.level
         listProgressBar.progress = Float(progress) / Float(50)
+        if achievement?.accessible == false { self.alpha = 0.5 }
     }
     
 }
