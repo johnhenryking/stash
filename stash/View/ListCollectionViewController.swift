@@ -60,5 +60,4 @@ class ListCollectionViewController: UICollectionViewController, LayoutDelegate {
         router.routeSelection(with: self, cell: cell, bool: cell.achievement?.accessible, index: indexPath.item)
     }
     
-
 }

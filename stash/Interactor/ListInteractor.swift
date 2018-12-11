@@ -27,9 +27,8 @@ class ListInteractor {
                     presenter.achievements.append(achievement)
                 }
                 
-                presenter.navigationItem.title = achievements.overview.values.first
-                ListInteractor.title = achievements.overview.values.first
-                
+                presenter.navigationItem.title = achievements.overview["title"]
+                ListInteractor.title = achievements.overview["title"]
             }
                 
             catch let error {
