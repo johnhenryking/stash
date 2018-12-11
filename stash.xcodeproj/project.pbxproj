@@ -164,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				CEFBC6FB21BEEA2A00071AD0 /* Achievements.swift */,
+				CEFBC70C21BFB0AC00071AD0 /* Constants.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -190,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				CEFBC70A21BF915F00071AD0 /* ListInteractor.swift */,
-				CEFBC70C21BFB0AC00071AD0 /* Constants.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
