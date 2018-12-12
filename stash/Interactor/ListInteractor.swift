@@ -31,13 +31,12 @@ class ListInteractor {
             }
                 
             catch let error {
-                // Present Alert Controller if unable to access json
+                // Present Alert Controller if unable to access Json
                 presenter.presentAlert(title: "Error", message: error.localizedDescription)
                 
             }
         }
     }
-    
     
     
     
