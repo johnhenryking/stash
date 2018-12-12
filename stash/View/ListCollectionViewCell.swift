@@ -37,7 +37,7 @@ class ListCollectionViewCell: UICollectionViewCell {
         let progress = achievement?.progress ?? 0
         ptsLabel.text = Constants.show(progress)
         levelLabel.text = achievement?.level
-        listProgressBar.progress = Float(progress) / Float(50)
+        self.listProgressBar.setProgress(Float(progress) / Float(50), animated: true)
         if achievement?.accessible == false { self.alpha = 0.5 }
     }
     
